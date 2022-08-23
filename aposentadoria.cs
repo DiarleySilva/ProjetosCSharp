@@ -20,16 +20,16 @@ namespace curso_c_senac{
 
             // Processamento e saída dos dados
             
-            if(idade >= 65 && sexo == "h" || sexo == "H"){
+            if(idade >= 65 && sexo == "h" || idade >= 65 && sexo == "H"){
             Console.WriteLine("Você pode ou já está aposentado!");
             }
-            if(idade < 61 && sexo == "h" || sexo == "H"){
+            else if(idade < 61 && sexo == "h" || idade < 61 && sexo == "H"){
             Console.WriteLine("Você ainda não pode aposentar!");
             }
-            if(idade >=61 && sexo == "m" || sexo == "M" ){
+            else if(idade >=61 && sexo == "m" || idade < 61 && sexo == "M"){
             Console.WriteLine("Você pode ou já está aposentada!");
             }
-            if(idade < 61 && sexo == "m" || sexo == "M"){
+            else if(idade < 61 && sexo == "m" || idade < 61 && sexo == "M"){
             Console.WriteLine("Você ainda não pode aposentar!");
             }
 
