@@ -4,7 +4,7 @@ namespace teste;
 
     class idade{
 
-        public void Main(String[] args){
+        public void Main(){
             
             int AnoNasc, AnoAtual;
 
@@ -13,6 +13,6 @@ namespace teste;
             Console.WriteLine("Digite o ano atual: ");
             AnoAtual = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine($"Sua idade é de {AnoNasc - AnoAtual} anos");
+            Console.WriteLine($"Sua idade é de {AnoAtual - AnoNasc} anos.");
         }
     }

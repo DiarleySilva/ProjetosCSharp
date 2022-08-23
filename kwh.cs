@@ -1,28 +1,26 @@
 using System;
 
-namespace custo;
+namespace custo{
 
     class kwh{
 
-        static void Main(String[] args){
-            
-            float watts, dias, horas, kwh, consumo;
+        static void Main()
+        {
+            decimal watts, dias, horas, kwh;
 
-
-            Console.WriteLine("Digite o consumo em Watts do aparelho: ");
-            watts = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Digite o consumo em Watts(W) do aparelho: ");
+            watts = Convert.ToDecimal(Console.ReadLine());
             
             Console.WriteLine("Digite quantas horas o aparelho fica ligado: ");
-            horas = Convert.ToInt32(Console.ReadLine());
+            horas = Convert.ToDecimal(Console.ReadLine());
 
             Console.WriteLine("Digite quantos dias do mês o aparelho é ligado:");
-            dias = Convert.ToInt32(Console.ReadLine());
+            dias = Convert.ToDecimal(Console.ReadLine());
 
             Console.WriteLine("Digite o custo do Kwh em sua cidade: ");
-            kwh = Convert.ToInt32(Console.ReadLine());
+            kwh = Convert.ToDecimal(Console.ReadLine());
 
-            consumo = (watts * horas * dias) / 1000 * kwh;
-
-            Console.WriteLine($"O consumo é de R${consumo} por mês.");
+            Console.WriteLine($"O consumo é de R${((watts * horas * dias) / 1000 * kwh)} por mês.");
         }
     }
+}
